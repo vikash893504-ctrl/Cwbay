@@ -1,11 +1,9 @@
-FROM python:3.10-slim
+FROM python:3.9.7-slim-buster
 
-WORKDIR /app
-
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
+WORKDIR .
 COPY . .
 
-# Both web server and bot running via background subshell
-CMD python3 web.py & exec python3 main.py
+RUN pip3 install -r requirements.txt
+
+CMD ["python", "main.py"]
+
