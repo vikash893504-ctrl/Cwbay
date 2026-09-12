@@ -9,4 +9,3 @@ class Config(object):
     API_ID = int(os.environ.get("API_ID", "34435812"))[span_1](start_span)[span_1](end_span)
     API_HASH = os.environ.get("API_HASH", "ec83fcc94203532d52146a458cc9a274")[span_2](start_span)[span_2](end_span)
     AUTH_USERS = os.environ.get("AUTH_USERS", "8211049757")
-  
